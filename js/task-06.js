@@ -19,7 +19,7 @@ const totalLengthRef = inputValRef.getAttribute("data-length");
 
 const inTotalLengt = parseInt(totalLengthRef, 10);
 
-inputValRef.oninput = function () {
+inputValRef.onblur = function () {
   if (inputValRef.value.length === inTotalLengt) {
     this.classList.remove("invalid");
     this.classList.add("valid");
